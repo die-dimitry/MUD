@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        .index-body {
+            animation: background-color infinite 10s;
+            font-family: 'Kaushan Script', cursive;
+        }
+
+        @media(min-width:767px) {
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 50px;
+                animation: fadeIn 3s;
+            }
+
+            .index-header {
+                text-align: center;
+                height: 100px;
+            }
+
+            .free-space {
+                height: 100px;
+            }
+        }
+
+        @media(max-width:767px) {
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 25px;
+                animation: fadeIn 3s;
+            }
+
+            .index-header {
+                text-align: center;
+                height: 70px;
+            }
+
+            .free-space {
+                height: 250px;
+            }
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes background-color {
+            0% {
+                background: #CDC8FF;
+            }
+
+            25% {
+                background: #A0DFFF;
+            }
+
+            50% {
+                background: #EAC8FF;
+            }
+
+            75% {
+                background: #A0DFFF;
+            }
+
+            100% {
+                background: #CDC8FF;
+            }
+        }
+
+        input:focus {
+            outline: none !important;
+        }
+
+        button:focus {
+            outline: none !important;
+        }
+
+        .aboutus {
+            margin-left: 10%;
+            width: 80%;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+        }
+
+        .aboutus-header {
+            font-size: 50px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+        }
+		
+		.image-container {
+		  position: relative;
+		  margin-left: 3.75%;
+		  width: 10%;
+		  border-raidus: 2%;
+		  display: inline-block;
+		}
+
+		.image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		  border-raidus: 2%;
+		}
+
+		.overlay {
+		  position: absolute;
+		  bottom: 0;
+		  left: 100%;
+		  right: 0;
+		  background-color: #008CBA;
+		  overflow: hidden;
+		  width: 0;
+		  height: 100%;
+		  transition: .5s ease;
+		}
+
+		.image-container:hover .overlay {
+		  width: 100%;
+		  left: 0;
+		}
+				
+		.overlay1 {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background-color: #008CBA;
+		  overflow: hidden;
+		  width: 0;
+		  height: 100%;
+		  transition: .5s ease;
+		}
+
+		.image-container:hover .overlay1 {
+		  width: 100%;
+		}
+
+		.text {
+		  color: white;
+		  font-size: 15px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  white-space: nowrap;
+		}
+    </style>
+</head>
+
+<body class="index-body">
+    <nav class="navbar navbar-inverse navbar-fixed-top myNavbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://127.0.0.1:5000/">Malicious URL Detector</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li class="active"><a href="http://127.0.0.1:5000/about">About Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://127.0.0.1:5000/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="free-space"></div>
+    <div class="container-fluid index-header">
+        <h1>About Us</h1>
+    </div>
+    <div class="container-fluid">
+        <p class="aboutus"><br><br><br>
+            VIT BE Students working on project to explore python and ML.
+        </p>
+    </div>
+	<div>
+        <center>
+	<div>
+        
+		<div class="image-container">
+			<img src="images/suhail.jpg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">Suhail Khan</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="images/nikhil.jpg" alt="Avatar" class="image">
+			<div class="overlay1">
+				<div class="text">Nikhil Dhangada</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="images/sunita.jpg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">Sunita Bambale</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="images/syed.jpg" alt="Avatar" class="image">
+			<div class="overlay1">
+				<div class="text">Syed Mohammad</div>
+			</div>
+		</div>
+				
+	</div>
+</center>
+
+    <div class="footer">
+        All rights reserved (c) 2022 Suhail ❤️
+    </div>
+</body></html>

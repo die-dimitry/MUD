@@ -1,0 +1,9 @@
+openpyxl
+flask
+pandas
+seaborn
+numpy
+PIL
+urlib
+requests
+matplotlib
