@@ -3,7 +3,8 @@ flask
 pandas
 seaborn
 numpy
-PIL
-urlib
+pillow
+urllib3
 requests
 matplotlib
+scikit-learn
